@@ -1,0 +1,58 @@
+html {
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background-color: #1d232a;
+
+    font-family: Calibri;
+    font-size: 1.5rem;
+
+    margin: 0;
+}
+
+body {
+    margin: 2rem 4rem;
+}
+
+body * {
+    color: #d8dee9;
+}
+
+h2 {
+    color: #5d99cc;
+    margin-bottom: 0.75rem;
+}
+
+.lst {
+    margin-left: 1rem;
+}
+
+
+/**
+ * 
+ * */
+.dl-link, .dl-all-link {
+    margin-bottom: 0.5rem;
+}
+
+.dl-all-link a {
+    color: #888888;
+    cursor: pointer;
+}
+
+.dl-link a, .dl-all-link a {
+    text-decoration: none;
+    transition: color 200ms;
+}
+
+.dl-link a:hover, .dl-all-link a:hover {
+    color: #84bff2;
+}
+
+/**
+ * 
+ * */
+.divider {
+    width: 12rem;
+    margin-top: 2.25rem;
+    margin-bottom: 1rem;
+}

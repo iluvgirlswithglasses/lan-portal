@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LAN portal</title>
+    <link rel="stylesheet" href="{% static 'res/darktheme.css' %}">
+</head>
+<body>
+    <!-- header -->
+    <div class="desc">
+        <h2>mikaPortal</h2>
+        <div class="lst">Just a place to transfer my files<br>
+           Google Drive and similar sites are stupid<br>
+           Generating torrent for one-time use is dumb<br>
+           So I created this
+        </div>
+    </div>
+    <div class="divider"></div>
+
+    <!-- content -->
+    <span style="display: block; color: #888888;">Click any file below to download</span>
+    {% for channel, files in lst.items %}
+        <h2>$ ls "./{{ channel }}"</h2>
+
+        <div class="lst">
+            {% with 'dl-bt-'|add:channel as d %}
+                <div class="dl-all-link"><a class="dl-all-bt" data="{{ d }}">(download all files in "./{{ channel }}")</a></div>
+            {% endwith %}
+            {% for f in files %}
+                {% with 'f/'|add:channel|add:'/'|add:f as url %}
+                {% with 'dl-bt-'|add:channel as cls %}
+                    <div class="dl-link"><a class="{{ cls }}" download href="{% static url %}">{{ f }}</a></div>
+                {% endwith %}
+                {% endwith %}
+            {% endfor %}
+        </div>
+    {% endfor %}
+</body>
+
+<script src="{% static 'res/script.js' %}"></script>
+</html>
