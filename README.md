@@ -9,4 +9,4 @@ When you need to quickly copy a file from a computer to another, what would you 
 
 And that's why I created this abomination:
 
-![2022-09-05_13-05](https://user-images.githubusercontent.com/58514512/188371871-f10b8cae-9851-4dd5-a14f-58f3ad7d0247.png)
+![2022-09-05_13-27](https://user-images.githubusercontent.com/58514512/188375061-e8b6dd4e-0b1c-4fcd-bab7-1edec150f2a2.png)
