@@ -15,13 +15,13 @@ And that's why I created this abomination:
 
 Create this directory if not exists:
 
-```
-./portal/static/f/
-```
+```./portal/static/f/```
 
 Let's call that directory as `ROOT`.
 
 In `ROOT`, create some more directories as channels. Put files to those channels to get them shared. Sounds like Discord, heh?
 
-To run server, simply follow `manage.py`'s instruction. For example: `python manage.py runserver 0.0.0.0:4002`
+To run server, simply follow `manage.py`'s instruction. For example: 
+
+```python manage.py runserver 0.0.0.0:4002```
 
